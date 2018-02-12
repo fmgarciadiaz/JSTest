@@ -47,6 +47,9 @@
     <v-content>
       <router-view/>
     </v-content>
+    <v-alert color="error" icon="warning" value="true">
+      This is a error alert.
+    </v-alert>
     <v-navigation-drawer
       temporary
       :right="right"
