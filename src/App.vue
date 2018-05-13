@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-navigation-drawer
+    <!---<v-navigation-drawer
       persistent
       :mini-variant="miniVariant"
       :clipped="clipped"
@@ -23,7 +23,8 @@
           </v-list-tile-content>
         </v-list-tile>
       </v-list>
-    </v-navigation-drawer>
+      PEPE!!
+    </v-navigation-drawer> --!-->
     <v-toolbar
       app
       :clipped-left="clipped"
@@ -47,9 +48,9 @@
     <v-content>
       <router-view/>
     </v-content>
-    <v-alert color="error" icon="warning" value="true">
-      This is a error alert.
-    </v-alert>
+    <template>
+  
+</template>
     <v-navigation-drawer
       temporary
       :right="right"

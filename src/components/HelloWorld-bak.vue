@@ -23,7 +23,6 @@
             <div><i @click.stop.prevent="toggleSidebarMenu" class="fa fa-bars fa-2x"></i></div>
         </nav>
 
-        
         <div id="setup-panel" :class="[sidebarIsOpen ? 'sidebar-menu-open' : 'sidebar-menu-closed']" v-click-outside="closeSidebarMenu">
             <tabs :options="{ useUrlFragment: false }">
                 <tab name="Agregar Serie">
@@ -143,17 +142,24 @@
             </tabs>
         </div>
 
-        <v-container fluid>
         <div class="d-flex" style="overflow-x: hidden; height: 100%;">
             <div id="the-chart">
                 <Chart/>
             </div>
         </div>
-        </v-container>
-
     </div>
   
 
+
+
+        <blockquote> 
+          &#8220;First, solve the problem. Then, write the code.&#8221;
+          <footer>
+            <small>
+              <em>&mdash;John Johnson</em>
+            </small>
+          </footer>
+        </blockquote>
         </v-flex>
       </v-layout>
     </v-slide-y-transition>
@@ -161,6 +167,7 @@
 </template>
 
 <script>
+
     import axios from 'axios'
     import _ from 'lodash'
     import Chart from '@/components/Chart.vue'
